@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Golbal Classes */
+a {
+  text-decoration: none;
+}
+
+.login {
+  background: #f0f2f5;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.info {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info h1 {
+  font-size: 3.5rem;
+  /* margin-bottom: 3rem; */
+  color: #1877f2;
+  font-weight: bolder;
+}
+.info p {
+  font-size: 1.5rem;
+  color: #1c1e21;
+  width: 80%;
+  text-align: center;
+  position: relative;
+  top: 0.7rem;
+}
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  height: 47vh;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 40vh;
+  background: #fff;
+}
+.form form input {
+  padding: 0.8rem 0.3rem;
+  margin: 0.2rem 0;
+  border-radius: 5px;
+  border: 2px solid #f0f2f5;
+  outline: none;
+  font-size: 14px;
+  position: relative;
+  /* bottom: 0.5rem; */
+}
+.form form input:focus {
+  border: 1px solid #006eff;
+}
+.form .loginBtn {
+  margin-top: 0.5rem;
+  min-height: 3rem;
+  border-radius: 5px;
+  background: #166fe5;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+.form .loginBtn:hover {
+  background: #1660c0;
+}
+.form .forget {
+  color: #006eff;
+  text-align: center;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+.form .forget:hover {
+  text-decoration: underline;
+}
+.register {
+  margin: 0 auto;
+  margin-top: 2rem;
+  background: #36a420;
+  padding: 1rem 1.4rem;
+  color: white;
+  font-weight: bolder;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.register:hover {
+  background: #299713;
+}
+@media screen and (min-width: 924px) {
+  .login {
+    flex-direction: row;
+  }
+  .info {
+    width: 60%;
+    position: relative;
+    bottom: 7rem;
+    right: 6rem;
+    text-align: start;
+  }
+  /* .info h1, */
+  .info p {
+    position: relative;
+    left: 8.6rem;
+    width: 60%;
+    text-align: left;
+  }
+  .form {
+    width: 27%;
+    position: relative;
+    right: 1rem;
+    bottom: 5rem;
+  }
+  .form form {
+    width: 80%;
+  }
+}
